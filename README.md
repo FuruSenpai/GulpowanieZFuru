@@ -4,18 +4,14 @@
 Lekcja #2 zawiera zmiany w plikach: 
 
 * **gulpfile.js**
-
-* **/jade**
+* **/jade** 
   * index.jade
-  
 * **/sass**
   * main.scss
   * _setup.scss
   * _vars.scss
   * _mixins.scss
   * _rwd.scss
- 
 * **/css**
   * main.css
-  
 * **index.html**
