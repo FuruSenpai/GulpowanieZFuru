@@ -12,6 +12,4 @@ Lekcja #2 zawiera zmiany w plikach:
   * _vars.scss
   * _mixins.scss
   * _rwd.scss
-* **/css**
-  * main.css
 * **index.html**
