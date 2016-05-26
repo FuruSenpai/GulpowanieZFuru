@@ -21,11 +21,13 @@ gulp.task('connect', function() {
 //Gulp learn Jade
 
 gulp.task('jade', function() {
+    
     gulp.src('./jade/**/*.jade')
         .pipe(jade({
             pretty: true
         }))
         .pipe(gulp.dest('./'))
+        .pipe(connect.reload());
 });
 
 //.end of learn Jade
@@ -33,20 +35,18 @@ gulp.task('jade', function() {
 //Gulp learn Sass
 
 gulp.task('sass', function() {
-
     return gulp.src('./sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./css'))
+        .pipe(connect.reload());
 });
 
-//Gulp watch Sass
+//.end of Learn Sass
 
-gulp.task('sass:watch', function() {
-    gulp.watch('./sass/**/*.scss', ['sass']);
+gulp.task('watch', function() {
+    gulp.watch(['./jade/**/*.jade'], ['jade']);
+    gulp.watch(['./sass/**/*.scss'], ['sass']);
+    
 });
 
-//.end watch Sass
-
-//.end of learn Sass
-
-gulp.task('default', ['connect', 'jade', 'sass']);
+gulp.task('default', ['connect', 'watch', 'jade', 'sass']);
