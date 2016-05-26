@@ -7,3 +7,4 @@ Lekcja #0 zawiera zmiany w plikach:
 
 * **gulpfile.js**
 
+* **index.html**
