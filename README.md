@@ -1,15 +1,12 @@
-# Gulpowanie z Furu
-####Pliki zawarte w różnych etapach zaawansowania wraz z lekcjami.
+# Grid System z lekcji
+####Pliki zawarte w lekcji
 
-Lekcja #2 zawiera zmiany w plikach: 
+Lista lokalizacji plików
 
-* **gulpfile.js**
 * **/jade** 
-  * index.jade
+  * grid.jade
 * **/sass**
-  * main.scss
-  * _setup.scss
-  * _vars.scss
-  * _mixins.scss
   * _rwd.scss
-* **index.html**
+* **/css**
+  * main.css
+* **grid.html**
