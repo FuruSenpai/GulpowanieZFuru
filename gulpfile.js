@@ -22,7 +22,7 @@ gulp.task('connect', function() {
 
 gulp.task('jade', function() {
     
-    gulp.src('./jade/**/*.jade')
+    return gulp.src('./jade/**/*.jade')
         .pipe(jade({
             pretty: true
         }))
