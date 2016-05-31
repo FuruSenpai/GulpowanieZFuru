@@ -1,7 +1,7 @@
 # Grid System z lekcji
 ####Pliki zawarte w lekcji
 
-Lista lokalizacji plików
+Lista plików
 
 * **/jade** 
   * grid.jade
