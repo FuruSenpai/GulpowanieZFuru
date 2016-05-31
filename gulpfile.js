@@ -21,7 +21,7 @@ gulp.task('connect', function() {
 //Gulp learn Jade
 
 gulp.task('jade', function() {
-    gulp.src('./jade/**/*.jade')
+    return gulp.src('./jade/**/*.jade')
         .pipe(jade({
             pretty: true
         }))
