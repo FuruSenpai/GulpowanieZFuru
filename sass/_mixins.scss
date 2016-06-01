@@ -1,0 +1,15 @@
+
+@mixin roboto($weight, $size, $color) {
+    font-family: $roboto;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin transition($element, $time, $effect) {
+    -webkit-transition: $element, $time, $effect;
+    -moz-transition: $element, $time, $effect;
+    -o-transition: $element, $time, $effect;
+    -ms-transition: $element, $time, $effect;
+    transition: $element, $time, $effect;
+}
