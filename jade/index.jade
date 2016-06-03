@@ -2,42 +2,147 @@ doctype html
 html(lang="en")
 head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, intial-scale=1.0")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Moja pierwsza strona WWW
     link(rel="stylesheet", href="css/main.css")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
 body
     .container
-            header
-                h1 Moja pierwsza responsywna strona WWW
-                nav
-                    a(href="#") Menu1
-                    a(href="#") Menu2
-                    a(href="#") Menu3
-                    a(href="#") Menu4
-                    
-            section.hero
-                h1 Jestem bohaterem tej strony
-                p  Krótki tekst rozpoczynający na stronie
-                button.check Sprawdź mnie
-                
-            section.about
-                .row
-                    .col-4
-                        .aboutIcon
-                            img(src="icon.png", alt="icon 32x32")
-                            h2 O mnie nagłówek
-                            p krótki opis o mnie
-                    .col-4
-                        .aboutIcon
-                            img(src="icon.png", alt="icon 32x32")
-                            h2 O mnie nagłówek
-                            p krótki opis o mnie
-                    .col-4
-                        .aboutIcon
-                            img(src="icon.png", alt="icon 32x32")
-                            h2 O mnie nagłówek
-                            p krótki opis o mnie
-                        
+        .navigation-bar
+            h1.logo AwesomePage
+            nav
+                a(href="#").active Home
+                a(href="#") About
+                a(href="#") Work
+                a(href="#") Contact       
  
-                    
+        .hero
+            h1.title Hello, I'm Hero!
+            p.blurb Here will be motivational, fascinating slogan or something like that, but now it's only blurb
+            button.violet Check now!
         
+        section.about
+            .section.violet
+                h2 About
+            
+            .row
+                .col-4
+                    .offer.green
+                        i.material-icons smartphone
+                    h3 Mobile design
+                    p Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                .col-4
+                    .offer.green
+                        i.material-icons public
+                    h3 Webdesign
+                    p Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                .col-4
+                    .offer.green
+                        i.material-icons keyboard
+                    h3 Development
+                    p Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                    
+            .row
+                .col-4
+                    .offer.green
+                        i.material-icons print
+                    h3 Design to print
+                    p Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                .col-4
+                    .offer.green
+                        i.material-icons extension
+                    h3 Plugin development
+                    p Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                .col-4
+                    .offer.green
+                        i.material-icons photo_camera
+                    h3 Photography
+                    p Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+                    
+            button.violet Hire us
+            
+        section.work
+                .section.green
+                    h2 Work
+                
+                .row
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-1.png", alt="")
+                            figcaption Description
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-2.png", alt="")
+                            figcaption Description
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-3.png", alt="")
+                            figcaption Description
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-4.png", alt="")
+                            figcaption Description
+                .row
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-5.png", alt="")
+                            figcaption Description
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-6.png", alt="")
+                            figcaption Description
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-7.png", alt="")
+                            figcaption Description
+                    .col-3
+                        figure
+                            button.fullsize.violet 
+                                i.material-icons add
+                            img(src="/images/work-thumb-8.png", alt="")
+                            figcaption Description
+                            
+               button.green Show more
+               
+        section.contact
+                .section.violet
+                    h2 Contact
+                    
+                .row
+                    .col-8
+                        form(action="#")
+                            input(type="text", name="name", placeholder="Your name")
+                            input(type="mail", name="mail", placeholder="Your mail address")
+                            textarea(name="text", cols="30", rows="10", placeholder="Type what you need")
+                            button(type="submit").green Send
+                            
+                    .col-4
+                        .socials
+                            .icon
+                                i.ion-social-facebook
+                            span /yourcompany
+                            .icon
+                                i.ion-social-twitter twitter
+                            span @yourcompany
+                            .icon
+                                i.ion-social-instagram instagram
+                            span yourcompany
+                            
+         section.footer
+                .section.green
+                    h2 Copyright 2016 Furu.Art
