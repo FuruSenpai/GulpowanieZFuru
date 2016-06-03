@@ -1,44 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moja pierwsza strona WWW</title>
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Moja pierwsza responsywna strona WWW</h1>
-      <nav><a href="#">Menu1</a><a href="#">Menu2</a><a href="#">Menu3</a><a href="#">Menu4</a></nav>
-    </header>
-    <section class="hero">
-      <h1>Jestem bohaterem tej strony</h1>
-      <p> Krótki tekst rozpoczynający na stronie</p>
-      <button class="check">Sprawdź mnie</button>
-    </section>
+    <div class="navigation-bar">
+      <h1 class="logo">AwesomePage</h1>
+      <nav><a href="#" class="active">Home</a><a href="#">About</a><a href="#">Work</a><a href="#">Contact       </a></nav>
+    </div>
+    <div class="hero">
+      <h1 class="title">Hello, I'm Hero!</h1>
+      <p class="blurb">Here will be motivational, fascinating slogan or something like that, but now it's only blurb</p>
+      <button class="violet">Check now!</button>
+    </div>
     <section class="about">
+      <div class="section violet">
+        <h2>About</h2>
+      </div>
       <div class="row">
         <div class="col-4">
-          <div class="aboutIcon"><img src="icon.png" alt="icon 32x32">
-            <h2>O mnie nagłówek</h2>
-            <p>krótki opis o mnie</p>
-          </div>
+          <div class="offer green"><i class="material-icons">smartphone</i></div>
+          <h3>Mobile design</h3>
+          <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.</p>
         </div>
         <div class="col-4">
-          <div class="aboutIcon"><img src="icon.png" alt="icon 32x32">
-            <h2>O mnie nagłówek</h2>
-            <p>krótki opis o mnie</p>
-          </div>
+          <div class="offer green"><i class="material-icons">public</i></div>
+          <h3>Webdesign</h3>
+          <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.</p>
         </div>
         <div class="col-4">
-          <div class="aboutIcon"><img src="icon.png" alt="icon 32x32">
-            <h2>O mnie nagłówek</h2>
-            <p>krótki opis o mnie</p>
+          <div class="offer green"><i class="material-icons">keyboard</i></div>
+          <h3>Development</h3>
+          <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="offer green"><i class="material-icons">print</i></div>
+          <h3>Design to print</h3>
+          <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.</p>
+        </div>
+        <div class="col-4">
+          <div class="offer green"><i class="material-icons">extension</i></div>
+          <h3>Plugin development</h3>
+          <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.</p>
+        </div>
+        <div class="col-4">
+          <div class="offer green"><i class="material-icons">photo_camera</i></div>
+          <h3>Photography</h3>
+          <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.</p>
+        </div>
+      </div>
+      <button class="violet">Hire us</button>
+    </section>
+    <section class="work">
+      <div class="section green">
+        <h2>Work</h2>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-1.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-2.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-3.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-4.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-5.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-6.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-7.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure>
+            <button class="fullsize violet"> <i class="material-icons">add</i></button><img src="/images/work-thumb-8.png" alt="">
+            <figcaption>Description</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <button class="green">Show more</button>
+    <section class="contact">
+      <div class="section violet">
+        <h2>Contact</h2>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <form action="#">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="mail" name="mail" placeholder="Your mail address">
+            <textarea name="text" cols="30" rows="10" placeholder="Type what you need"></textarea>
+            <button type="submit" class="green">Send</button>
+          </form>
+        </div>
+        <div class="col-4">
+          <div class="socials">
+            <div class="icon"><i class="ion-social-facebook"></i></div><span>/yourcompany</span>
+            <div class="icon"><i class="ion-social-twitter">twitter</i></div><span>@yourcompany</span>
+            <div class="icon"><i class="ion-social-instagram">instagram</i></div><span>yourcompany</span>
           </div>
         </div>
       </div>
     </section>
+    <section class="footer">
+      <div class="section green">
+        <h2>Copyright 2016 Furu.Art</h2>
+      </div>
+    </section>
   </div>
 </body>
-</html>
