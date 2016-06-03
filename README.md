@@ -5,7 +5,6 @@ Zmiany w lokalizacjach:
 * **/sass**
   * main.scss
   * _vars.scss
-  * _mixins.scss
   * _rwd.scss
   * _setup.scss
 * **/css**
@@ -13,3 +12,4 @@ Zmiany w lokalizacjach:
 * **/jade**
   * index.jade
 * **index.html**
+* **/images**
