@@ -8,7 +8,3 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 
 // .Imports
-
-h1 {
-    @include roboto(bold, 36px, rgba(33, 33, 33, 1));
-}
