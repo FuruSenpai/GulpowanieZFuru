@@ -13,6 +13,8 @@ Foldery wraz z plikami w zależności od lekcji zmieniają swoją zawartość
 
 **[#4]** Lekcja - [Źródło](https://github.com/FuruArt/GulpowanieZFuru/tree/%234-Lekcja)
 
+**[#5]** Lekcja - [Źródło](https://github.com/FuruArt/GulpowanieZFuru/tree/%235-Lekcja)
+
 **Grid system** - [Źródło](https://github.com/FuruArt/GulpowanieZFuru/tree/%23grid-system)
 
 Wraz z przyrostem lekcji będą pojawiać się nowe pliki.
