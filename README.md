@@ -5,11 +5,11 @@ Zmiany w lokalizacjach:
 * **/sass**
   * main.scss
   * _vars.scss
-  * _rwd.scss
+  * _mixins.scss (dodałem @mixin makeButton())
   * _setup.scss
 * **/css**
   * main.css
 * **/jade**
   * index.jade
 * **index.html**
-* **/images**
+* **/images** (większy hero-image.jpg)
