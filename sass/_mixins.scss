@@ -13,3 +13,22 @@
     -ms-transition: $element, $time, $effect;
     transition: $element, $time, $effect;
 }
+
+@mixin makeButton($padding, $background, $border-width, $radius) {
+    @include roboto(500, 18px, #fff);
+    @include transition(all, .4s, ease-in-out);
+    padding: $padding;
+    background: $background;
+    border: $border-width solid lighten($background, 20px);
+    border-radius: $radius;
+    text-transform: uppercase;
+    
+    &:active {
+        background: darken($background, 10px);
+        padding: 15px 20px;
+    }
+    
+    &:hover {
+        background: lighten($background, 10px);
+    }
+}
