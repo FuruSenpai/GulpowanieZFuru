@@ -76,6 +76,10 @@ button {
   outline: 0;
   background: none; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 .spacer {
   display: block;
   width: 100%;
@@ -118,10 +122,21 @@ button {
     justify-content: flex-end; }
     .navigation-bar nav a {
       margin-left: 30px;
-      color: #fff;
+      color: rgba(255, 255, 255, 0.8);
       font-size: 18px;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: all, 0.2s, ease-in-out;
+      -moz-transition: all, 0.2s, ease-in-out;
+      -o-transition: all, 0.2s, ease-in-out;
+      -ms-transition: all, 0.2s, ease-in-out;
+      transition: all, 0.2s, ease-in-out; }
+      .navigation-bar nav a:hover {
+        color: white; }
+      .navigation-bar nav a:active {
+        border-bottom: 2px solid #fff;
+        margin-top: 10px; }
       .navigation-bar nav a.active {
+        color: white;
         border-bottom: 2px solid #fff;
         padding-bottom: 2px; }
 
@@ -147,7 +162,7 @@ button {
     margin: 0 auto;
     line-height: 2em;
     margin-bottom: 35px; }
-  .hero .container button {
+  .hero .container .check {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -162,11 +177,75 @@ button {
     border: 1px solid #ca61dc;
     border-radius: 4px;
     text-transform: uppercase; }
-    .hero .container button:active {
+    .hero .container .check:active {
       background: #771e86;
-      padding: 15px 20px; }
-    .hero .container button:hover {
+      padding: 25px; }
+    .hero .container .check:hover {
       background: #bc37d3; }
+
+.col-4 {
+  line-height: 2em; }
+  .col-4 .offer {
+    margin: 0 auto;
+    -webkit-transition: all, 0.4s, ease-in-out;
+    -moz-transition: all, 0.4s, ease-in-out;
+    -o-transition: all, 0.4s, ease-in-out;
+    -ms-transition: all, 0.4s, ease-in-out;
+    transition: all, 0.4s, ease-in-out;
+    width: 70px;
+    height: 70px;
+    background: #00bfa5;
+    border-radius: 50%; }
+    .col-4 .offer i {
+      display: flex;
+      justify-content: center;
+      line-height: 70px;
+      font-size: 32px;
+      color: #fff; }
+    .col-4 .offer i {
+      -webkit-transition: all, 0.7s, ease-in-out;
+      -moz-transition: all, 0.7s, ease-in-out;
+      -o-transition: all, 0.7s, ease-in-out;
+      -ms-transition: all, 0.7s, ease-in-out;
+      transition: all, 0.7s, ease-in-out; }
+    .col-4 .offer:hover {
+      background: #00d9bb; }
+      .col-4 .offer:hover i {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); }
+  .col-4 h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #212121;
+    text-align: center;
+    margin-top: 20px; }
+  .col-4 p {
+    text-align: center;
+    margin: 0 10px; }
+
+.hire {
+  display: block;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  -webkit-transition: all, 0.4s, ease-in-out;
+  -moz-transition: all, 0.4s, ease-in-out;
+  -o-transition: all, 0.4s, ease-in-out;
+  -ms-transition: all, 0.4s, ease-in-out;
+  transition: all, 0.4s, ease-in-out;
+  padding: 15px 35px;
+  background: #9c27b0;
+  border: 1px solid #ca61dc;
+  border-radius: 4px;
+  text-transform: uppercase; }
+  .hire:active {
+    background: #771e86;
+    padding: 15px 45px; }
+  .hire:hover {
+    background: #bc37d3; }
 
 .hero {
   background-image: url("/images/hero-image.jpg"); }

@@ -10,6 +10,11 @@ button {
     background: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .spacer {
     display: block;
     width: 100%;
@@ -54,11 +59,22 @@ button {
         
         a {
             margin-left: 30px;
-            color: #fff;
+            color: rgba(255, 255, 255, 0.8);
             font-size: 18px;
             text-decoration: none;
+            @include transition(all, .2s, ease-in-out);
+
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+
+            &:active {
+                border-bottom: 2px solid #fff;
+                margin-top: 10px;
+            }
             
             &.active {
+                color: rgba(255, 255, 255, 1);
                 border-bottom: 2px solid #fff;
                 padding-bottom: 2px;
             }
@@ -95,8 +111,49 @@ button {
             margin-bottom: 35px;
         }
 
-        button {
-            @include makeButton(15px, $violet, 1px, 4px);
+        .check {
+            @include makeButton(15px, $violet, 1px, 4px, 25px);
         }
     }
 }
+
+.col-4 {
+    line-height: 2em;
+    
+    .offer {
+        margin: 0 auto;
+        @include transition(all, .4s, ease-in-out);
+        @include offerCircle(70px, 70px, $green, 50%, 32px, #fff);
+
+        i {
+            @include transition(all, .7s, ease-in-out);
+        }
+        
+        &:hover {
+            background: lighten($green, 5px);
+
+            i {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    h3 {
+        @include roboto(400, 22px, $text);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    p {
+        text-align: center;
+        margin: 0 10px;
+    }
+}
+
+.hire {
+    display: block;
+    margin: 0 auto;
+    @include makeButton(15px 35px, $violet, 1px, 4px, 15px 45px);
+}
+

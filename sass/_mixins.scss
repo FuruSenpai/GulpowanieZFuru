@@ -14,7 +14,7 @@
     transition: $element, $time, $effect;
 }
 
-@mixin makeButton($padding, $background, $border-width, $radius) {
+@mixin makeButton($padding, $background, $border-width, $radius, $active-padding) {
     @include roboto(500, 18px, #fff);
     @include transition(all, .4s, ease-in-out);
     padding: $padding;
@@ -25,10 +25,25 @@
     
     &:active {
         background: darken($background, 10px);
-        padding: 15px 20px;
+        padding: $active-padding;
     }
     
     &:hover {
         background: lighten($background, 10px);
+    }
+}
+
+@mixin offerCircle($width, $height, $background, $radius, $icon-size, $icon-color) {
+    width: $width;
+    height: $height;
+    background: $background;
+    border-radius: $radius;
+
+    i {
+        display: flex;
+        justify-content: center;
+        line-height: $height;
+        font-size: $icon-size;
+        color: $icon-color;
     }
 }
