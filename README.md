@@ -3,13 +3,10 @@
 
 Zmiany w lokalizacjach:
 * **/sass**
-  * main.scss
-  * _vars.scss
-  * _mixins.scss (dodałem @mixin makeButton())
+  * _mixins.scss (naprawiłem @mixin makeButton())
   * _setup.scss
 * **/css**
   * main.css
 * **/jade**
   * index.jade
 * **index.html**
-* **/images** (większy hero-image.jpg)
