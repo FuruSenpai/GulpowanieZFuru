@@ -157,3 +157,32 @@ a {
     @include makeButton(15px 35px, $violet, 1px, 4px, 15px 45px);
 }
 
+.col-3 {
+    figure {
+        @include makeCaption(220px, 185px, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), auto, -50px, auto, auto, auto, 0px, auto, auto, center, none, 600, 18px, $text, none, 100%, 50px);
+        margin-bottom: 30px;
+
+        .fullsize {
+            @include transition(all, .4s, ease-in-out);
+            @include offerCircle(36px, 36px, $violet, 50%, 28px, #fff);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0;
+        }   
+
+        &:hover {
+            .fullsize {
+                opacity: 1;
+                top: -20px;
+            }
+        }
+    }
+
+}
+
+.show {
+    display: block;
+    margin: 0 auto;
+    @include makeButton(15px 35px, $green, 1px, 4px, 15px 45px);
+}
