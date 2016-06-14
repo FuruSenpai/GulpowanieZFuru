@@ -3,7 +3,7 @@
 
 Zmiany w lokalizacjach:
 * **/sass**
-  * _mixins.scss (naprawiłem @mixin makeButton())
+  * _mixins.scss
   * _setup.scss
 * **/css**
   * main.css
